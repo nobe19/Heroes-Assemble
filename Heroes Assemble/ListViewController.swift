@@ -10,24 +10,29 @@ import UIKit
 class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var heroes = ["Scarlet Witch", "Iron Man", "Harry Potter", "Batman", "Mephisto"]
+    var heroes = Heroes()
+    //var heroes = ["Scarlet Witch", "Iron Man", "Harry Potter", "Batman", "Mephisto"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        heroes.getHeroes(){
+            self.tableView.reloadData()
+        }
     }
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return heroes.count
+        return heroes.heroesArray.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = heroes[indexPath.row] //???
+        cell.textLabel?.text = heroes.heroesArray[indexPath.row].name//???
         return cell
     }
 }
