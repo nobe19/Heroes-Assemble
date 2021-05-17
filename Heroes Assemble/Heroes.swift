@@ -20,8 +20,9 @@ class Heroes {
     
     //put inside a for loop
     // for i in rnage 1-750
+    
         
-    for i in 1...750{
+    for i in 1...732 {
         var apiURL = "https://superheroapi.com/api/3876294599135188/\(index)"
 
     }
@@ -40,6 +41,7 @@ class Heroes {
                 }
                 completed()
             }
+
         }
 
 }
