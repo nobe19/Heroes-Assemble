@@ -213,9 +213,9 @@ The Witch</string>
                     <connections>
                         <outlet property="aliasesTextView" destination="hTM-K0-bF9" id="5rm-7K-BHq"/>
                         <outlet property="alterEgoLabel" destination="Q0B-7E-R74" id="rXI-Ty-aYg"/>
+                        <outlet property="fullNameLabel" destination="A8x-hz-mtY" id="dPY-fW-YAc"/>
                         <outlet property="heroLabel" destination="Na7-Kv-4Qp" id="Kf8-tq-eep"/>
                         <outlet property="imageView" destination="gf7-R1-Y7Q" id="Yw1-CE-8d6"/>
-                        <outlet property="nameLabel" destination="A8x-hz-mtY" id="dPY-fW-YAc"/>
                         <outlet property="publisherLabel" destination="eNu-yf-MrM" id="q5d-J0-ovD"/>
                     </connections>
                 </viewController>

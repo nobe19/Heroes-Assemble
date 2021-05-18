@@ -14,6 +14,10 @@ class Heroes {
         struct HeroData {
             var name: String
             var id: String
+            var publisher: String
+            var image: String
+            var fullName: String
+            var aliases: String
         }
         
         var heroesArray: [HeroData] = []

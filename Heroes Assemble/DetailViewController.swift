@@ -10,7 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var heroLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var alterEgoLabel: UILabel!
     @IBOutlet weak var aliasesTextView: UITextView!
     @IBOutlet weak var publisherLabel: UILabel!
